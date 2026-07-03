@@ -1,60 +1,154 @@
-# Ollama Playground
+# 🧠 Local LLM Playground
 
-A simple Python application that connects to a locally running Large Language Model (LLM) using Ollama.
+A lightweight Python application that interacts with a locally running Large Language Model (LLM) using **Ollama**.
 
-## Features
+This project was built to explore how local AI models can be integrated into Python applications without relying on cloud APIs. It serves as my first hands-on project with local LLMs and focuses on understanding inference, prompt handling, and application structure.
 
-* Connects to a local Qwen 4B model
-* Accepts user input from the terminal
-* Sends prompts to the LLM
-* Displays generated responses
-* Measures response generation time
+---
 
-## Technologies Used
+## ✨ Features
 
-* Python
-* Ollama
-* Qwen 3 4B
-* VS Code
+- 💬 Chat with a locally hosted LLM
+- ⚡ Measure response generation time
+- 📊 Display response statistics (words & characters)
+- 🖥️ Clean terminal interface
+- 🔒 Runs completely offline
 
-## What I Learned
+---
 
-* Setting up Ollama locally
-* Running open-source LLMs on personal hardware
-* Creating Python applications that interact with AI models
-* Measuring inference latency
-* Understanding CPU/GPU model offloading
+## 🛠️ Tech Stack
 
-## Example
+- Python 3
+- Ollama
+- Qwen 3 4B
+- VS Code
+- Git & GitHub
 
-Question:
-Explain hash maps in 3 sentences.
+---
 
-Response:
-A hash map is a data structure that stores key-value pairs using a hash function to compute storage locations efficiently...
+## 📂 Project Structure
 
-Response Time:
-7.04 seconds
+```
+ollama-playground/
+│
+├── assets/
+├── app.py
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── .gitignore
+```
 
-## Future Improvements
+---
 
-* Multi-turn chat support
-* Conversation history
-* PDF summarization
-* Document question answering
-* GUI using Streamlit
+## 🚀 Getting Started
 
-## How to Run
+### 1. Install Ollama
 
-1. Install Ollama
-2. Pull the model
-   
-   ollama run qwen3:4b
+Download and install Ollama from https://ollama.com
 
-3. Install dependencies
-   
-   pip install ollama
+### 2. Pull the model
 
-4. Run the application
-   
-   python app.py
+```bash
+ollama run qwen3:4b
+```
+
+### 3. Clone this repository
+
+```bash
+git clone https://github.com/deeonenonly/ollama-playground.git
+cd ollama-playground
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the application
+
+```bash
+python app.py
+```
+
+---
+
+## 📷 Demo
+
+*(Add a screenshot here once available.)*
+
+Example output:
+
+```
+==========================================
+      Local LLM Playground v1.2
+==========================================
+
+Model  : qwen3:4b
+Status : Ready
+
+User: Explain hash maps.
+
+AI:
+A hash map is...
+
+------------------------------------------
+
+Time Taken : 7.02 sec
+Words      : 64
+Characters : 401
+```
+
+---
+
+## 📚 What I Learned
+
+Through this project I learned:
+
+- Setting up Ollama on Windows
+- Running local open-source LLMs
+- Building Python applications around AI models
+- Measuring inference performance
+- Basic prompt handling
+- Git and GitHub workflow
+- Organizing Python projects for maintainability
+
+---
+
+## 🔮 Planned Improvements
+
+- Continuous chat mode
+- Conversation history
+- Streaming responses
+- Model selection
+- PDF question answering
+- Retrieval-Augmented Generation (RAG)
+- Streamlit web interface
+
+---
+
+## 🎯 Why I Built This
+
+As I prepare for software engineering and AI-focused placements, I'm building a collection of small but complete projects to strengthen my understanding of modern AI development tools.
+
+This repository is part of that learning journey.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📈 Version History
+
+### v1.2
+- Improved terminal interface
+- Added response statistics
+- Introduced project constants
+- Refactored code into functions
+
+### v1.1
+- Initial local LLM chat application
