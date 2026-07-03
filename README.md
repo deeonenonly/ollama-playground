@@ -76,7 +76,7 @@ python app.py
 
 ## 📷 Demo
 
-*(Add a screenshot here once available.)*
+*(screenshot to be added.)*
 
 Example output:
 
@@ -84,20 +84,23 @@ Example output:
 ==========================================
       Local LLM Playground v1.2
 ==========================================
-
 Model  : qwen3:4b
 Status : Ready
+Type 'exit' to quit.
+==========================================
 
-User: Explain hash maps.
+User: explain hash maps in one line.
 
 AI:
-A hash map is...
-
+A hash map is a data structure that stores key-value pairs using a hash function to compute the index of each key in an array for fast lookups, insertions, and deletions.
 ------------------------------------------
 
-Time Taken : 7.02 sec
-Words      : 64
-Characters : 401
+
+Time taken    : 53.67 seconds
+Words generated : 31
+Characters      : 170
+
+==========================================
 ```
 
 ---
