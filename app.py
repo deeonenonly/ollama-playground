@@ -1,26 +1,55 @@
 from ollama import chat
 from time import perf_counter
 
-question = input("Ask something: ")
+MODEL="qwen3:4b"
+LINE = "=" * 42
+SEPARATOR = "-" * 42
 
-start = perf_counter()
+def print_banner():
+    print(LINE)
+    print("      Local LLM Playground v1.2")
+    print(LINE)
+    print(f"Model  : {MODEL}")
+    print("Status : Ready")
+    print("Type 'exit' to quit.")
+    print(LINE)
+    print()
 
-response = chat(
-    model='qwen3:4b',
-    messages=[
-        {
-            'role': 'user',
-            'content': question
-        }
-    ]
-)
+def main():
+    print_banner()
+    question = input("User: ") #get user input
+    if question.lower() == "exit":
+        print("\nGoodbye!\n")
+        return
+    start = perf_counter()
 
-end = perf_counter()
+    response = chat(
+        model=MODEL,
+        messages=[
+            {
+                'role': 'user',
+                'content': question
+            }
+        ]
+    )
 
-answer = response['message']['content']
+    end = perf_counter()
 
-print("\nResponse:\n")
-print(answer)
+    answer = response["message"]["content"]
 
-print(f"\nTime taken: {end-start:.2f} seconds")
-print(f"Words generated: {len(answer.split())}")
+    print("\nAI:")  
+    print(answer) #display model response
+
+    print(SEPARATOR)
+    print()
+
+    print(f"\nTime taken    : {end-start:.2f} seconds")
+    print(f"Words generated : {len(answer.split())}")
+    print(f"Characters      : {len(answer)}")
+
+    print()
+    print(LINE)
+
+if __name__ == "__main__":
+    main()
+    
