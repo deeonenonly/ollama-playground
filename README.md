@@ -94,9 +94,6 @@ python app.py
 
 <img width="732" height="677" alt="04-code" src="https://github.com/user-attachments/assets/5bcfb44b-8fee-4837-9f16-21a982f402b3" />
 
-
-```
-
 ---
 
 ## 📚 What I Learned
