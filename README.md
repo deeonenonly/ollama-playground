@@ -12,7 +12,7 @@ This project was built to explore how local AI models can be integrated into Pyt
 - ⚡ Measure response generation time
 - 📊 Display response statistics (words & characters)
 - 🖥️ Clean terminal interface
-- 🔒 Runs completely offline
+- 🔒 Runs locally without cloud APIs
 
 ---
 
@@ -76,31 +76,25 @@ python app.py
 
 ## 📷 Demo
 
-*(screenshot to be added.)*
+### Application Startup
 
-Example output:
+<img width="336" height="140" alt="01-startup" src="https://github.com/user-attachments/assets/43424173-879d-4261-80fa-358a95eeafee" />
 
-```
-==========================================
-      Local LLM Playground v1.2
-==========================================
-Model  : qwen3:4b
-Status : Ready
-Type 'exit' to quit.
-==========================================
+### Local LLM Interaction
 
-User: explain hash maps in one line.
+<img width="777" height="183" alt="02-ml-response" src="https://github.com/user-attachments/assets/dc4c1dfb-61d6-45ab-a926-f670cbf58cb9" />
 
-AI:
-A hash map is a data structure that stores key-value pairs using a hash function to compute the index of each key in an array for fast lookups, insertions, and deletions.
-------------------------------------------
+### Multiple Queries
+
+<img width="867" height="192" alt="03-python-response" src="https://github.com/user-attachments/assets/7e437671-775c-42bf-abb8-39ecd6a29261" />
+
+## 🧩 Implementation
+
+### Core Ollama Integration
+
+<img width="732" height="677" alt="04-code" src="https://github.com/user-attachments/assets/5bcfb44b-8fee-4837-9f16-21a982f402b3" />
 
 
-Time taken    : 53.67 seconds
-Words generated : 31
-Characters      : 170
-
-==========================================
 ```
 
 ---
